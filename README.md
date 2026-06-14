@@ -82,7 +82,7 @@ This task would be running in the backgroud of the main processor. Because a del
 the overall ride operation and safety, it would rank lower than the previously listed tasks.
 
 2. **3× WCET stress** — if your highest-priority task's WCET tripled, what's the new U? Is the set still feasible?
-Linked
+![WCET Stress Test Calculation Verification](IMG_0280.jpg)
 
 3. **Preemption proof** — quote the two timestamps showing preemption.
 ![Preemption Evidence Trace Logs](SCR-20260614-ozmt.png)
