@@ -57,22 +57,23 @@ From Output after running for a few seconds:
 ### Engineering analysis
 
 1. **Priority defense** — explain each priority. RMS says shortest period &rarr; highest priority. Did you follow it?
-Yes i followed the RMS. 
-Highest Priority 15 : dispatch_interlock (10ms period)
+
+* **Yes i followed the RMS. 
+* **Highest Priority 15 : dispatch_interlock (10ms period)
 Because this task would be respoonsible for passengers' safety , this would be a high priority task.
 In addition because missing a dead line could result in an life threatening accident and system shutdown, 
 would classify as a strict hard deadline, further proving its need for its high priority.
 
-Priority 10 : motor_control (25ms period)
+* **Priority 10 : motor_control (25ms period)
 Since this controls the motor, this would be a higher priority task. Howoever since it would probably rely on the 
 dispatch interlock and other safety nets, it would be lower than those tasks but still have a high priority since missing a deadline
 can cause major accidents and shutdowns.
 
-Priority 5 : refresh_operator_display (50ms period)
+* **Priority 5 : refresh_operator_display (50ms period)
 This task would be responsible for updated the rider operators display and show different statuses and metric of the ride. Since this 
 task is can miss a deadline without causing and safety incidents, this tasks priority would rank lower than those above.
 
-Lowest Priority 2 : task_log (200ms period)
+* **Lowest Priority 2 : task_log (200ms period)
 This task would be running in the backgroud of the main processor. Because a delay in updating the log does not affect
 the overall ride operation and safety, it would rank lower than the previously listed tasks.
 
@@ -120,4 +121,6 @@ What to look for:
 
 ## Honor code
 
-AI is allowed for filling in task bodies. Disclose what you used. Be ready to explain why your WCET measurement is honest (vs. a best-case timing that misses the worst-case path).
+AI Disclosure
+AI Usage Disclosure
+Tool Use: An AI assistant was used strictly to clean up and reformat the markdown syntax for the Task Table after the text columns became misaligned and broken during data transfer.
