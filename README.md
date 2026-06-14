@@ -121,6 +121,6 @@ What to look for:
 
 ## Honor code
 
-##AI Disclosure
+## AI Disclosure
 **AI Usage Disclosure
-**Tool Use: Gemini was used strictly to clean up and reformat the markdown syntax for the Task Table after the text columns became misaligned and broken during data transfer.
+** Tool Use: Gemini was used strictly to clean up and reformat the markdown syntax for the Task Table after the text columns became misaligned and broken during data transfer.
