@@ -19,6 +19,9 @@ Scaffold level: **~70% complete**.
 ## README defense (graded)
 
 Your README must include:
+![Ride-X Dispatch Monitor Output Table](SCR-20260614-ovnt.png)
+![Bonus WCET Max Log Trace 1](SCR-20260614-ptwi.png)
+![Bonus WCET Max Log Trace 2](SCR-20260614-ptyi.png)
 
 ### Task table (mandatory)
 
@@ -35,7 +38,7 @@ Your README must include:
 - Liu-Layland bound for n=4: U ≤ 4(2^(1/4) − 1) = 0.7568
 - If U > Liu-Layland: run response-time analysis on task D (lowest priority)
 - Conclusion: feasible / infeasible / borderline. State which.
-
+![Schedulability Defense Verification](IMG_0279.jpg)
 ### Preemption evidence
 
 Add this to one of your task bodies:
@@ -54,6 +57,7 @@ From Output after running for a few seconds:
 [Interlock tick] t=1085745
 [Interlock tick] t=1088174
 [Motor tick] t=1066789  (This line got blocked and pushed down)
+![Preemption Evidence Trace Logs](SCR-20260614-ozmt.png)
 ### Engineering analysis
 
 1. **Priority defense** — explain each priority. RMS says shortest period &rarr; highest priority. Did you follow it?
@@ -81,7 +85,7 @@ the overall ride operation and safety, it would rank lower than the previously l
 Linked
 
 3. **Preemption proof** — quote the two timestamps showing preemption.
-Linked 
+![Preemption Evidence Trace Logs](SCR-20260614-ozmt.png)
 ## How to fail
 
 - Skipping the WCET measurement and writing "the task takes about 1 ms." That's vibes, not engineering.
